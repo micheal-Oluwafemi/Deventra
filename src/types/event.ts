@@ -30,4 +30,4 @@ export interface Event {
   recommended: boolean; // Recommendation status
 }
 
-export type Category = "All" | "sport" | "music" | "food" | "art";
+export type Category = "All" | "Sport" | "Music" | "Food" | "Art";

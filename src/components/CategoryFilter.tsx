@@ -10,7 +10,7 @@ export function CategoryFilter({
   activeCategory,
   onCategoryChange,
 }: CategoryFilterProps) {
-  const categories: Category[] = ["All", "sport", "music", "food", "art"];
+  const categories: Category[] = ["All", "Sport", "Music", "Food", "Art"];
 
   return (
     <div className="mb-2">
@@ -30,10 +30,10 @@ export function CategoryFilter({
                 category
               ) : (
                 <span className="flex items-center gap-2">
-                  {category === "sport" && "🎯"}
-                  {category === "music" && "🎵"}
-                  {category === "food" && "🍽️"}
-                  {category === "art" && "🎨"}
+                  {category === "Sport" && "🎯"}
+                  {category === "Music" && "🎵"}
+                  {category === "Food" && "🍽️"}
+                  {category === "Art" && "🎨"}
                   {category}
                 </span>
               )}

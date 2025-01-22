@@ -2,7 +2,7 @@ export const eventData = {
   events: [
     {
       id: "1",
-      type: "music",
+      type: "Music",
       img_sm: "/src/assets/upcoming/img/music/1-sm.png",
       img_lg: "/src/assets/upcoming/img/music/1-lg.png",
       date: "2025-01-15",
@@ -88,7 +88,7 @@ export const eventData = {
     },
     {
       id: "2",
-      type: "music",
+      type: "Music",
       img_sm: "/src/assets/upcoming/img/music/2-lg.png",
       img_lg: "/src/assets/upcoming/img/music/2-lg.png",
       date: "2025-02-05",
@@ -174,7 +174,7 @@ export const eventData = {
     },
     {
       id: "3",
-      type: "art",
+      type: "Art",
       img_sm: "/src/assets/upcoming/img/art/3-sm.png",
       img_lg: "/src/assets/upcoming/img/art/3-lg.png",
       date: "2025-02-20",
@@ -279,7 +279,7 @@ export const eventData = {
     },
     {
       id: "4",
-      type: "art",
+      type: "Art",
       img_sm: "/src/assets/upcoming/img/art/2-sm.png",
       img_lg: "/src/assets/upcoming/img/art/2-lg.png",
       date: "2025-02-01",
@@ -365,7 +365,7 @@ export const eventData = {
     },
     {
       id: "5",
-      type: "art",
+      type: "Art",
       img_sm: "/src/assets/upcoming/img/art/1-sm.png",
       img_lg: "/src/assets/upcoming/img/art/1-lg.png",
       date: "2025-01-10",
@@ -451,7 +451,7 @@ export const eventData = {
     },
     {
       id: "6",
-      type: "food",
+      type: "Food",
       img_sm: "/src/assets/upcoming/img/food/1-sm.png",
       img_lg: "/src/assets/upcoming/img/food/1-lg.png",
       date: "2025-01-20",
@@ -537,7 +537,7 @@ export const eventData = {
     },
     {
       id: "7",
-      type: "food",
+      type: "Food",
       img_sm: "/src/assets/upcoming/img/food/2-sm.png",
       img_lg: "/src/assets/upcoming/img/food/2-lg.png",
       date: "2025-02-10",
@@ -604,7 +604,7 @@ export const eventData = {
     },
     {
       id: "8",
-      type: "sport",
+      type: "Sport",
       img_sm: "/src/assets/upcoming/img/sport/2-sm.png",
       img_lg: "/src/assets/upcoming/img/sport/2-lg.png",
       date: "2025-02-15",
@@ -671,7 +671,7 @@ export const eventData = {
     },
     {
       id: "9",
-      type: "sport",
+      type: "Sport",
       img_sm: "/src/assets/upcoming/img/sport/1-sm.png",
       img_lg: "/src/assets/upcoming/img/sport/1-lg.png",
       date: "2025-01-25",
@@ -776,7 +776,7 @@ export const eventData = {
     },
     {
       id: "10",
-      type: "music",
+      type: "Music",
       img_sm: "/src/assets/upcoming/img/music/3-lg.png",
       img_lg: "/src/assets/upcoming/img/music/3-lg.png",
       date: "2025-02-25",
@@ -862,7 +862,7 @@ export const eventData = {
     },
     {
       id: "11",
-      type: "food",
+      type: "Food",
       img_sm: "/src/assets/upcoming/img/food/3-sm.png",
       img_lg: "/src/assets/upcoming/img/food/3-lg.png",
       date: "2025-03-01",
@@ -948,7 +948,7 @@ export const eventData = {
     },
     {
       id: "12",
-      type: "sport",
+      type: "Sport",
       img_sm: "/src/assets/upcoming/img/sport/3-sm.png",
       img_lg: "/src/assets/upcoming/img/sport/3-lg.png",
       date: "2025-03-05",
@@ -1034,7 +1034,7 @@ export const eventData = {
     },
     {
       id: "13",
-      type: "art",
+      type: "Art",
       img_sm: "/src/assets/upcoming/img/art/4-sm.png",
       img_lg: "/src/assets/upcoming/img/art/4-lg.png",
       date: "2025-03-10",
@@ -1120,7 +1120,7 @@ export const eventData = {
     },
     {
       id: "14",
-      type: "music",
+      type: "Music",
       img_sm: "/src/assets/upcoming/img/music/4-sm.png",
       img_lg: "/src/assets/upcoming/img/music/4-lg.png",
       date: "2025-03-15",
@@ -1187,7 +1187,7 @@ export const eventData = {
     },
     {
       id: "15",
-      type: "food",
+      type: "Food",
       img_sm: "/src/assets/upcoming/img/food/4-sm.png",
       img_lg: "/src/assets/upcoming/img/food/4-lg.png",
       date: "2025-03-20",
@@ -1254,7 +1254,7 @@ export const eventData = {
     },
     {
       id: "16",
-      type: "sport",
+      type: "Sport",
       img_sm: "/src/assets/upcoming/img/sport/4-sm.png",
       img_lg: "/src/assets/upcoming/img/sport/4-lg.png",
       date: "2025-03-25",
@@ -1340,7 +1340,7 @@ export const eventData = {
     },
     {
       id: "17",
-      type: "art",
+      type: "Art",
       img_sm: "/src/assets/upcoming/img/art/5-sm.png",
       img_lg: "/src/assets/upcoming/img/art/5-lg.png",
       date: "2025-04-01",
@@ -1407,7 +1407,7 @@ export const eventData = {
     },
     {
       id: "18",
-      type: "music",
+      type: "Music",
       img_sm: "/src/assets/upcoming/img/music/5-sm.png",
       img_lg: "/src/assets/upcoming/img/music/5-lg.png",
       date: "2025-04-05",
@@ -1474,7 +1474,7 @@ export const eventData = {
     },
     {
       id: "19",
-      type: "food",
+      type: "Food",
       img_sm: "/src/assets/upcoming/img/food/5-sm.png",
       img_lg: "/src/assets/upcoming/img/food/5-lg.png",
       date: "2025-04-10",

@@ -9,7 +9,7 @@ export function EventCard({ event }: { event: Event }) {
           alt={event.title}
           className="h-full w-full object-cover"
         />
-        <span className="absolute bottom-4 left-4 rounded-full bg-orange-600 px-3 py-1 text-sm font-medium text-white">
+        <span className="absolute bottom-4 left-4 rounded-full bg-orange-600 px-3 py-1 text-sm font-medium text-white first-letter:uppercase">
           {event.type}
         </span>
       </div>
