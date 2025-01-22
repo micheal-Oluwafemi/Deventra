@@ -108,3 +108,26 @@ html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+/* Swiper ClassNames */
+.events-swiper {
+  padding-bottom: 3rem !important;
+}
+
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ea580c !important; /* Orange-600 to match the theme */
+  width: 24px !important;
+  border-radius: 4px !important;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}

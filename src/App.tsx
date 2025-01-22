@@ -1,6 +1,6 @@
-import HeroSection from "./component/HeroSection";
-import Navbar from "./component/Navbar";
-import OtherEvents from "./component/OtherEvents";
+import HeroSection from "./sections/HeroSection";
+import Navbar from "./sections/Navbar";
+import OtherEvents from "./sections/OtherEvents";
 import LenisScroll from "../LenisScroll";
 
 export default function App() {

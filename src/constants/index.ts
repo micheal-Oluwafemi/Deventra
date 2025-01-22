@@ -3,8 +3,8 @@ export const eventData = {
     {
       id: "1",
       type: "music",
-      img_sm: "/assets/upcoming/img/music/1-sm.png",
-      img_lg: "/assets/upcoming/img/music/1-lg.png",
+      img_sm: "/src/assets/upcoming/img/music/1-sm.png",
+      img_lg: "/src/assets/upcoming/img/music/1-lg.png",
       date: "2025-01-15",
       hour: "20:00",
       title: "Rock Legends Live Concert",
@@ -27,58 +27,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
-              path: "",
-            },
-          ],
-        },
-        {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
-          name: "Amelie Laurent",
-          job: "Concert Manager",
-          social: [
-            {
-              icon: "/assets/organizers/social/x.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/instagram.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
+              path: "",
+            },
+          ],
+        },
+        {
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
+          name: "Amelie Laurent",
+          job: "Concert Manager",
+          social: [
+            {
+              icon: "/src/assets/organizers/social/x.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/instagram.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -89,8 +89,8 @@ export const eventData = {
     {
       id: "2",
       type: "music",
-      img_sm: "/assets/upcoming/img/music/2-sm.png",
-      img_lg: "/assets/upcoming/img/music/2-lg.png",
+      img_sm: "/src/assets/upcoming/img/music/2-lg.png",
+      img_lg: "/src/assets/upcoming/img/music/2-lg.png",
       date: "2025-02-05",
       hour: "19:00",
       title: "Jazz Night Live",
@@ -113,58 +113,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
-              path: "",
-            },
-          ],
-        },
-        {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
-          name: "Amelie Laurent",
-          job: "Concert Manager",
-          social: [
-            {
-              icon: "/assets/organizers/social/x.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/instagram.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
+              path: "",
+            },
+          ],
+        },
+        {
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
+          name: "Amelie Laurent",
+          job: "Concert Manager",
+          social: [
+            {
+              icon: "/src/assets/organizers/social/x.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/instagram.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -175,8 +175,8 @@ export const eventData = {
     {
       id: "3",
       type: "art",
-      img_sm: "/assets/upcoming/img/art/3-sm.png",
-      img_lg: "/assets/upcoming/img/art/3-lg.png",
+      img_sm: "/src/assets/upcoming/img/art/3-sm.png",
+      img_lg: "/src/assets/upcoming/img/art/3-lg.png",
       date: "2025-02-20",
       hour: "10:00",
       title: "Street Art Festival",
@@ -199,77 +199,77 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -280,8 +280,8 @@ export const eventData = {
     {
       id: "4",
       type: "art",
-      img_sm: "/assets/upcoming/img/art/2-sm.png",
-      img_lg: "/assets/upcoming/img/art/2-lg.png",
+      img_sm: "/src/assets/upcoming/img/art/2-sm.png",
+      img_lg: "/src/assets/upcoming/img/art/2-lg.png",
       date: "2025-02-01",
       hour: "11:00",
       title: "Impressionist Art Exhibition",
@@ -304,58 +304,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
-              path: "",
-            },
-          ],
-        },
-        {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
-          name: "Amelie Laurent",
-          job: "Concert Manager",
-          social: [
-            {
-              icon: "/assets/organizers/social/x.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/instagram.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
+              path: "",
+            },
+          ],
+        },
+        {
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
+          name: "Amelie Laurent",
+          job: "Concert Manager",
+          social: [
+            {
+              icon: "/src/assets/organizers/social/x.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/instagram.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -366,8 +366,8 @@ export const eventData = {
     {
       id: "5",
       type: "art",
-      img_sm: "/assets/upcoming/img/art/1-sm.png",
-      img_lg: "/assets/upcoming/img/art/1-lg.png",
+      img_sm: "/src/assets/upcoming/img/art/1-sm.png",
+      img_lg: "/src/assets/upcoming/img/art/1-lg.png",
       date: "2025-01-10",
       hour: "18:00",
       title: "Art Nouveau Exhibition",
@@ -390,58 +390,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -452,8 +452,8 @@ export const eventData = {
     {
       id: "6",
       type: "food",
-      img_sm: "/assets/upcoming/img/food/1-sm.png",
-      img_lg: "/assets/upcoming/img/food/1-lg.png",
+      img_sm: "/src/assets/upcoming/img/food/1-sm.png",
+      img_lg: "/src/assets/upcoming/img/food/1-lg.png",
       date: "2025-01-20",
       hour: "14:00",
       title: "Gourmet Food Festival",
@@ -476,58 +476,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
-              path: "",
-            },
-          ],
-        },
-        {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
-          name: "Amelie Laurent",
-          job: "Concert Manager",
-          social: [
-            {
-              icon: "/assets/organizers/social/x.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/instagram.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
+              path: "",
+            },
+          ],
+        },
+        {
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
+          name: "Amelie Laurent",
+          job: "Concert Manager",
+          social: [
+            {
+              icon: "/src/assets/organizers/social/x.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/instagram.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -538,8 +538,8 @@ export const eventData = {
     {
       id: "7",
       type: "food",
-      img_sm: "/assets/upcoming/img/food/2-sm.png",
-      img_lg: "/assets/upcoming/img/food/2-lg.png",
+      img_sm: "/src/assets/upcoming/img/food/2-sm.png",
+      img_lg: "/src/assets/upcoming/img/food/2-lg.png",
       date: "2025-02-10",
       hour: "12:00",
       title: "Vegan Delights Cooking Class",
@@ -562,39 +562,39 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -605,8 +605,8 @@ export const eventData = {
     {
       id: "8",
       type: "sport",
-      img_sm: "/assets/upcoming/img/sport/2-sm.png",
-      img_lg: "/assets/upcoming/img/sport/2-lg.png",
+      img_sm: "/src/assets/upcoming/img/sport/2-sm.png",
+      img_lg: "/src/assets/upcoming/img/sport/2-lg.png",
       date: "2025-02-15",
       hour: "09:30",
       title: "International Cricket Tournament",
@@ -629,39 +629,39 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -672,8 +672,8 @@ export const eventData = {
     {
       id: "9",
       type: "sport",
-      img_sm: "/assets/upcoming/img/sport/1-sm.png",
-      img_lg: "/assets/upcoming/img/sport/1-lg.png",
+      img_sm: "/src/assets/upcoming/img/sport/1-sm.png",
+      img_lg: "/src/assets/upcoming/img/sport/1-lg.png",
       date: "2025-01-25",
       hour: "16:00",
       title: "Basketball Championship Final",
@@ -696,77 +696,77 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -777,8 +777,8 @@ export const eventData = {
     {
       id: "10",
       type: "music",
-      img_sm: "/assets/upcoming/img/music/3-sm.png",
-      img_lg: "/assets/upcoming/img/music/3-lg.png",
+      img_sm: "/src/assets/upcoming/img/music/3-lg.png",
+      img_lg: "/src/assets/upcoming/img/music/3-lg.png",
       date: "2025-02-25",
       hour: "20:00",
       title: "Classical Symphony Performance",
@@ -801,58 +801,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -863,8 +863,8 @@ export const eventData = {
     {
       id: "11",
       type: "food",
-      img_sm: "/assets/upcoming/img/food/3-sm.png",
-      img_lg: "/assets/upcoming/img/food/3-lg.png",
+      img_sm: "/src/assets/upcoming/img/food/3-sm.png",
+      img_lg: "/src/assets/upcoming/img/food/3-lg.png",
       date: "2025-03-01",
       hour: "14:00",
       title: "BBQ Feast Extravaganza",
@@ -887,58 +887,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
-              path: "",
-            },
-          ],
-        },
-        {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
-          name: "Amelie Laurent",
-          job: "Concert Manager",
-          social: [
-            {
-              icon: "/assets/organizers/social/x.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/instagram.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
+              path: "",
+            },
+          ],
+        },
+        {
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
+          name: "Amelie Laurent",
+          job: "Concert Manager",
+          social: [
+            {
+              icon: "/src/assets/organizers/social/x.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/instagram.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -949,8 +949,8 @@ export const eventData = {
     {
       id: "12",
       type: "sport",
-      img_sm: "/assets/upcoming/img/sport/3-sm.png",
-      img_lg: "/assets/upcoming/img/sport/3-lg.png",
+      img_sm: "/src/assets/upcoming/img/sport/3-sm.png",
+      img_lg: "/src/assets/upcoming/img/sport/3-lg.png",
       date: "2025-03-05",
       hour: "17:00",
       title: "Football World Cup Qualifiers",
@@ -973,58 +973,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
-              path: "",
-            },
-          ],
-        },
-        {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
-          name: "Amelie Laurent",
-          job: "Concert Manager",
-          social: [
-            {
-              icon: "/assets/organizers/social/x.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/instagram.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
+              path: "",
+            },
+          ],
+        },
+        {
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
+          name: "Amelie Laurent",
+          job: "Concert Manager",
+          social: [
+            {
+              icon: "/src/assets/organizers/social/x.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/instagram.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -1035,8 +1035,8 @@ export const eventData = {
     {
       id: "13",
       type: "art",
-      img_sm: "/assets/upcoming/img/art/4-sm.png",
-      img_lg: "/assets/upcoming/img/art/4-lg.png",
+      img_sm: "/src/assets/upcoming/img/art/4-sm.png",
+      img_lg: "/src/assets/upcoming/img/art/4-lg.png",
       date: "2025-03-10",
       hour: "18:00",
       title: "Modern Art Symposium",
@@ -1059,58 +1059,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
-              path: "",
-            },
-          ],
-        },
-        {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
-          name: "Amelie Laurent",
-          job: "Concert Manager",
-          social: [
-            {
-              icon: "/assets/organizers/social/x.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/instagram.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
+              path: "",
+            },
+          ],
+        },
+        {
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
+          name: "Amelie Laurent",
+          job: "Concert Manager",
+          social: [
+            {
+              icon: "/src/assets/organizers/social/x.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/instagram.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -1121,8 +1121,8 @@ export const eventData = {
     {
       id: "14",
       type: "music",
-      img_sm: "/assets/upcoming/img/music/4-sm.png",
-      img_lg: "/assets/upcoming/img/music/4-lg.png",
+      img_sm: "/src/assets/upcoming/img/music/4-sm.png",
+      img_lg: "/src/assets/upcoming/img/music/4-lg.png",
       date: "2025-03-15",
       hour: "19:00",
       title: "Opera Gala Performance",
@@ -1145,39 +1145,39 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -1188,8 +1188,8 @@ export const eventData = {
     {
       id: "15",
       type: "food",
-      img_sm: "/assets/upcoming/img/food/4-sm.png",
-      img_lg: "/assets/upcoming/img/food/4-lg.png",
+      img_sm: "/src/assets/upcoming/img/food/4-sm.png",
+      img_lg: "/src/assets/upcoming/img/food/4-lg.png",
       date: "2025-03-20",
       hour: "13:00",
       title: "Sushi Masterclass",
@@ -1212,39 +1212,39 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -1255,8 +1255,8 @@ export const eventData = {
     {
       id: "16",
       type: "sport",
-      img_sm: "/assets/upcoming/img/sport/4-sm.png",
-      img_lg: "/assets/upcoming/img/sport/4-lg.png",
+      img_sm: "/src/assets/upcoming/img/sport/4-sm.png",
+      img_lg: "/src/assets/upcoming/img/sport/4-lg.png",
       date: "2025-03-25",
       hour: "10:00",
       title: "Tennis Open Championship",
@@ -1279,58 +1279,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
-              path: "",
-            },
-          ],
-        },
-        {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
-          name: "Amelie Laurent",
-          job: "Concert Manager",
-          social: [
-            {
-              icon: "/assets/organizers/social/x.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/instagram.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
+              path: "",
+            },
+          ],
+        },
+        {
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
+          name: "Amelie Laurent",
+          job: "Concert Manager",
+          social: [
+            {
+              icon: "/src/assets/organizers/social/x.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/instagram.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -1341,8 +1341,8 @@ export const eventData = {
     {
       id: "17",
       type: "art",
-      img_sm: "/assets/upcoming/img/art/5-sm.png",
-      img_lg: "/assets/upcoming/img/art/5-lg.png",
+      img_sm: "/src/assets/upcoming/img/art/5-sm.png",
+      img_lg: "/src/assets/upcoming/img/art/5-lg.png",
       date: "2025-04-01",
       hour: "11:00",
       title: "Photography Exhibition",
@@ -1365,39 +1365,39 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -1408,8 +1408,8 @@ export const eventData = {
     {
       id: "18",
       type: "music",
-      img_sm: "/assets/upcoming/img/music/5-sm.png",
-      img_lg: "/assets/upcoming/img/music/5-lg.png",
+      img_sm: "/src/assets/upcoming/img/music/5-sm.png",
+      img_lg: "/src/assets/upcoming/img/music/5-lg.png",
       date: "2025-04-05",
       hour: "20:00",
       title: "Indie Rock Festival",
@@ -1432,39 +1432,39 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
@@ -1475,8 +1475,8 @@ export const eventData = {
     {
       id: "19",
       type: "food",
-      img_sm: "/assets/upcoming/img/food/5-sm.png",
-      img_lg: "/assets/upcoming/img/food/5-lg.png",
+      img_sm: "/src/assets/upcoming/img/food/5-sm.png",
+      img_lg: "/src/assets/upcoming/img/food/5-lg.png",
       date: "2025-04-10",
       hour: "12:00",
       title: "Vegan Food Festival",
@@ -1499,58 +1499,58 @@ export const eventData = {
       ],
       organizers: [
         {
-          img_avatar: "/assets/organizers/organizer-avt-1.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-1.png",
           name: "Ellie Black",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
-              path: "",
-            },
-          ],
-        },
-        {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
-          name: "Amelie Laurent",
-          job: "Concert Manager",
-          social: [
-            {
-              icon: "/assets/organizers/social/x.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/instagram.svg",
-              path: "",
-            },
-            {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
         },
         {
-          img_avatar: "/assets/organizers/organizer-avt-2.png",
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
           name: "Amelie Laurent",
           job: "Concert Manager",
           social: [
             {
-              icon: "/assets/organizers/social/x.svg",
+              icon: "/src/assets/organizers/social/x.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/instagram.svg",
+              icon: "/src/assets/organizers/social/instagram.svg",
               path: "",
             },
             {
-              icon: "/assets/organizers/social/pinterest.svg",
+              icon: "/src/assets/organizers/social/pinterest.svg",
+              path: "",
+            },
+          ],
+        },
+        {
+          img_avatar: "/src/assets/organizers/organizer-avt-2.png",
+          name: "Amelie Laurent",
+          job: "Concert Manager",
+          social: [
+            {
+              icon: "/src/assets/organizers/social/x.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/instagram.svg",
+              path: "",
+            },
+            {
+              icon: "/src/assets/organizers/social/pinterest.svg",
               path: "",
             },
           ],
