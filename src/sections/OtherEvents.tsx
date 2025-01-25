@@ -1,6 +1,4 @@
-import { eventData } from "@/constants";
-import { Category } from "@/types/event";
-import { useState } from "react";
+import { Dispatch, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { CategoryFilter } from "@/components/CategoryFilter";
 import { EventCard } from "@/components/EventCard";
@@ -8,13 +6,35 @@ import { Mousewheel, Keyboard, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
+import { Category, Event } from "@/types/event";
+import { getEvent, getEvents } from "@/lib/contract";
+import { toast } from "sonner";
 
 const OtherEvents = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>("food");
+  const [activeCategory, setActiveCategory] = useState<Category>("Food");
+  const [events, setEvents]: [Event[], Dispatch<Event[]>] = useState([] as Event[])
 
-  const filteredEvents = eventData.events.filter(
-    (event) => activeCategory === "All" || event.type == activeCategory,
+  const filteredEvents = events.filter(
+    (event) => activeCategory === "All" || event.data.type == activeCategory,
   );
+
+  console.log(events)
+  async function getData() {
+    const { err, data } = await getEvents()
+    const { data: ddd2 } = await getEvent(3)
+    console.log({ ddd2 })
+    if (!err) {
+      setEvents(data || [])
+    } else {
+      toast.error(err)
+    }
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      getData()
+    }, 300)
+  }, [])
 
   return (
     <div className="mx-auto my-20 max-w-6xl px-3 lg:my-32">

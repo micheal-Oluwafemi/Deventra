@@ -1,3 +1,6 @@
+import { Eip1193Provider } from "ethers"
+
+
 export interface SocialMedia {
   icon: string; // Path to the social media icon
   path: string; // URL or path to the social media profile
@@ -16,18 +19,27 @@ export interface Seat {
 }
 
 export interface Event {
-  id: string; // Unique identifier for the event
-  type: string; // Type of the event (e.g., 'music')
-  img_sm: string; // Small image path
-  img_lg: string; // Large image path
-  date: string; // Date of the event (e.g., '2025-01-15')
-  hour: string; // Time of the event (e.g., '20:00')
-  title: string; // Title of the event
-  location: string; // Location of the event
-  description: string; // Description of the event
-  seats: Seat[]; // Array of available seats
-  organizers: Organizer[]; // Array of event organizers
-  recommended: boolean; // Recommendation status
+  id: number; // Unique identifier for the event,
+  title: string; // Title of the event,
+  date: Date; // Date of the event
+  participantsIds: string[] | null,
+  data: {
+    type: string | null; // Type of the event (e.g., 'music')
+    img_sm: string | null; // Small image path
+    img_lg: string | null; // Large image path
+    date: string | null; // Date of the event (e.g., '2025-01-15')
+    hour: string | null; // Time of the event (e.g., '20:00')
+    location: string | null; // Location of the event
+    description: string | null; // Description of the event
+    seats: Seat[] | null; // Array of available seats
+    organizers: Organizer[] | null; // Array of event organizers
+    public: boolean; //Weather or not it shud be publically
+  }
+}
+
+
+export type Global = typeof globalThis & {
+  ethereum: Eip1193Provider
 }
 
 export type Category = "All" | "Sport" | "Music" | "Food" | "Art";

@@ -5,7 +5,7 @@ const LenisScroll = () => {
   useEffect(() => {
     const lenis = new Lenis();
 
-    lenis.on("scroll", (e) => {
+    lenis.on("scroll", (_) => {
       // console.log(e);
     });
 
