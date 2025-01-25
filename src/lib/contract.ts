@@ -42,6 +42,45 @@ const eventsABI = [
         "internalType": "uint256",
         "name": "event_id",
         "type": "uint256"
+      }
+    ],
+    "name": "get",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "event_id",
+        "type": "uint256"
       },
       {
         "internalType": "string",
@@ -70,27 +109,22 @@ const eventsABI = [
         "internalType": "uint256",
         "name": "event_id",
         "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
       }
     ],
-    "name": "getEvent",
+    "name": "registerEvent",
     "outputs": [
       {
         "internalType": "string",
         "name": "",
         "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      },
-      {
-        "internalType": "address[]",
-        "name": "",
-        "type": "address[]"
       }
     ],
-    "stateMutability": "view",
+    "stateMutability": "payable",
     "type": "function"
   },
   {
@@ -121,6 +155,11 @@ const eventsABI = [
             "type": "string"
           },
           {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          },
+          {
             "internalType": "string",
             "name": "",
             "type": "string"
@@ -132,30 +171,6 @@ const eventsABI = [
       }
     ],
     "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "event_id",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "price",
-        "type": "uint256"
-      }
-    ],
-    "name": "registerEvent",
-    "outputs": [
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
-    ],
-    "stateMutability": "payable",
     "type": "function"
   }
 ]
