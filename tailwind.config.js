@@ -55,8 +55,8 @@ export default {
       },
     },
     backgroundImage: {
-      heroBg1: "url('/src/assets/hero/hero-bg1.png')",
-      heroBg2: "url('/src/assets/hero/hero-bg2.png')",
+      heroBg1: "url('/src/assets/hero/microphone.jpg')",
+      heroBg2: "url('/src/assets/hero/meeting.jpg')",
       pattern: "url('/assets/images/patern-bg.png')",
     },
     fontFamily: {

@@ -19,6 +19,7 @@ import { CalendarIcon, Loader2, MapPinIcon, SearchIcon } from "lucide-react";
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { toast } from "sonner";
+import { Wallet } from "lucide-react"
 
 type Props = {
   connected: boolean,
@@ -44,12 +45,11 @@ const HeroSection = ({ connected, setConnected }: Props) => {
             },
           )}
         >
-          DISCOVER EVENTS
+          DISCOVER DECENTRALIZED EVENTS
           <br />& EXPERIENCES
         </h1>
         <p className="mx-auto max-w-2xl text-base text-gray-300 lg:text-lg">
-          Join a vibrant community where you can explore global happenings and
-          share memorable moments with friends and family.
+          Join a global community where you can explore, book, and share unforgettable events—securely powered by blockchain technology.
         </p>
       </div>
       {connected ? <>
@@ -138,7 +138,7 @@ const HeroSection = ({ connected, setConnected }: Props) => {
           }
           setConnecting(false)
         }}>
-          {connecting ? <Loader2 className="animate-spin" /> : "Connect Wallet To Begin"}
+          {connecting ? <Loader2 className="animate-spin" /> : <><Wallet /> Connect Wallet To Begin</>}
         </Button>
       }
     </main>

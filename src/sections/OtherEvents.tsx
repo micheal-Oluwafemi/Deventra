@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Category, Event } from "@/types/event";
-import { getEvent, getEvents } from "@/lib/contract";
+import { getEvents } from "@/lib/contract";
 import { toast } from "sonner";
 
 const OtherEvents = () => {
@@ -21,8 +21,6 @@ const OtherEvents = () => {
   console.log(events)
   async function getData() {
     const { err, data } = await getEvents()
-    const { data: ddd2 } = await getEvent(3)
-    console.log({ ddd2 })
     if (!err) {
       setEvents(data || [])
     } else {

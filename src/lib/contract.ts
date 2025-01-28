@@ -1,5 +1,5 @@
 import { BrowserProvider, Contract, Signer } from "ethers"
-import { Event, Global } from "@/types/event"
+import { Event, Global, User } from "@/types/event"
 
 export const {
   VITE_EVENT_CONTRACT_ADDRESS,
@@ -11,7 +11,59 @@ export const {
 } = import.meta.env;
 
 //TODO: Remove the type declaration since it will be infered when we put the ABI
-const usersABI: string[] = []
+const usersABI = [
+  {
+    "inputs": [
+      { "internalType": "string", "name": "name", "type": "string" },
+      { "internalType": "string", "name": "email", "type": "string" },
+      { "internalType": "string", "name": "phone", "type": "string" }
+    ],
+    "name": "register",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "id", "type": "uint256" },
+      { "internalType": "string", "name": "name", "type": "string" },
+      { "internalType": "string", "name": "email", "type": "string" },
+      { "internalType": "string", "name": "phone", "type": "string" }
+    ],
+    "name": "update",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "id", "type": "uint256" }
+    ],
+    "name": "getUser",
+    "outputs": [
+      { "internalType": "string", "name": "", "type": "string" },
+      { "internalType": "string", "name": "", "type": "string" },
+      { "internalType": "string", "name": "", "type": "string" },
+      { "internalType": "address", "name": "", "type": "address" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "_address", "type": "address" }
+    ],
+    "name": "getByAddress",
+    "outputs": [
+      { "internalType": "string[]", "name": "", "type": "string[]" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
+
+
+
 const eventsABI = [
   {
     "inputs": [
@@ -183,7 +235,7 @@ export let usersContract: Contract | null = null;
 
 export async function connectWallet() {
   try {
-    let global: Global = window as any;
+    const global: Global = window as never;
     console.log(VITE_EVENT_CONTRACT_ADDRESS)
     if (global.ethereum) {
       browserProvider = new BrowserProvider(global.ethereum);
@@ -205,7 +257,7 @@ export async function getEvents(pool_limit: number = 200) {
     if (!eventsContract) return { err: "Wallet has not been connected yet kindly connect and try again", data: null }
     console.log("Starting to fetch contracts")
     const raw_response = await eventsContract.listEvents(pool_limit) as [[number, string, string, string]];
-    let data: Event[] = raw_response.map(r => {
+    const data: Event[] = raw_response.map(r => {
       return {
         id: r[0],
         title: r[1],
@@ -225,7 +277,7 @@ export async function getEvent(event_id: number) {
     if (!eventsContract) return { err: "Wallet has not been connected yet kindly connect and try again", data: null }
     console.log("Starting to fetch contracts")
     const raw_response = await eventsContract.get(event_id) as [number, string, string, string[]];
-    let data: Event = {
+    const data: Event = {
       id: event_id,
       title: raw_response[1],
       data: JSON.parse(raw_response[1]),
@@ -233,6 +285,75 @@ export async function getEvent(event_id: number) {
       participantsIds: raw_response[3]
     }
     return { data, err: null }
+  } catch (error) {
+    console.log(error)
+    return { err: "Unable to fetch latest events at this moment", data: null }
+  }
+}
+
+export async function getUserFromAddress(address: string) {
+  try {
+    if (!usersContract) return { err: "Wallet has not been connected yet kindly connect and try again", data: null }
+    console.log("Starting to fetch contracts")
+    const raw_response = await usersContract.getByAddress(address) as [string, string, string, string];
+    if (raw_response.length != 4) return { err: null, data: null }
+    console.log({ raw_response })
+    const data: User = {
+      id: raw_response[0],
+      name: raw_response[1],
+      email: raw_response[2],
+      phone: raw_response[3],
+      address
+    }
+    return {
+      data,
+      err: null
+    }
+  } catch (error) {
+    console.log(error)
+    return { err: "Unable to fetch latest events at this moment", data: null }
+  }
+}
+
+export async function getUserData(id: number) {
+  try {
+    if (!usersContract) return { err: "Wallet has not been connected yet kindly connect and try again", data: null }
+    console.log("Starting to fetch contracts")
+    const raw_response = await usersContract.getUser(id) as [string, string, string, string];
+    const data: User = {
+      id,
+      name: raw_response[0],
+      email: raw_response[1],
+      phone: raw_response[2],
+      address: raw_response[3]
+    }
+    return { data, err: null }
+  } catch (error) {
+    console.log(error)
+    return { err: "Unable to fetch user data at the moment", data: null }
+  }
+}
+
+export async function registerUser(name: string, email: string, phone: string) {
+  try {
+    if (!usersContract) return { err: "Wallet has not been connected yet kindly connect and try again", data: null }
+    console.log("Starting to fetch contracts")
+    const transaction = await usersContract.register(name, email, phone);
+    await transaction.wait();
+    return { data: true, err: null }
+  } catch (error) {
+    console.log(error)
+    return { err: "Unable to fetch latest events at this moment", data: null }
+  }
+}
+
+export async function updateUser(id: bigint, name: string, email: string, phone: string) {
+  try {
+    if (!usersContract) return { err: "Wallet has not been connected yet kindly connect and try again", data: null }
+    console.log("Starting to fetch contracts")
+    const transaction = await usersContract.update(id, name, email, phone);
+    await transaction.wait();
+    return { data: true, err: null }
   } catch (error) {
     console.log(error)
     return { err: "Unable to fetch latest events at this moment", data: null }
