@@ -83,7 +83,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-primary font-archivo text-white;
+    @apply overflow-x-hidden bg-primary font-archivo text-white;
   }
 }
 

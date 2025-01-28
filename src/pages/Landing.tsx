@@ -5,11 +5,20 @@ import LenisScroll from "@/LenisScroll";
 import { useState } from "react";
 
 export default function Landing() {
-  const [connected, setConnected] = useState(false)
+  const [connected, setConnected] = useState(false);
   return (
     <main className="w-full">
       <LenisScroll />
-      <div className="relative h-dvh">
+      <div
+        className="relative h-[90dvh]"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(15,16,23,0.85) 0%, rgba(15,16,23,0.85) 100%), url('/src/assets/hero/bg4.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <Navbar walletConnected={connected} setWalletConnected={setConnected} />
 
         <HeroSection connected={connected} setConnected={setConnected} />
