@@ -7,8 +7,8 @@ export default {
       colors: {
         primary: "#0f1017",
         accent: {
-          DEFAULT: "#e14817",
-          hover: "#cb4419",
+          DEFAULT: "#5600d6",
+          hover: "#2e0073",
         },
         secondary: {
           DEFAULT: "#1b1c23",

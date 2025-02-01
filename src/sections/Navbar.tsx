@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Button } from "@/components/ui/button";
 import { connectWallet, getUserFromAddress, registerUser, signer } from "@/lib/contract";
-import { Loader2 } from "lucide-react";
+import { Loader2, Moon, Sun } from "lucide-react";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { Dispatch } from "react"
@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux"
 import OnboardingModal from "@/components/OnboardingModal";
 import { setUser } from "@/redux/userReducer";
 import UserProfile from "@/components/UserProfile";
+import { Link } from "react-router-dom";
 
 type Props = {
   walletConnected: boolean,
@@ -19,6 +20,10 @@ const Navbar = ({ walletConnected, setWalletConnected }: Props) => {
   const [onboardingModalOpen, setOnboardingModalOpen] = useState(false)
   const [r, setR] = useState(false)
   const [registering, setRegistering] = useState(false)
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    const savedTheme = localStorage.getItem('theme')
+    return (savedTheme === 'dark' || savedTheme === 'light') ? savedTheme : 'light'
+  })
   const dispatch = useDispatch()
 
   async function InitData() {
@@ -27,6 +32,7 @@ const Navbar = ({ walletConnected, setWalletConnected }: Props) => {
     if (connected) {
       //TODO: Fetch User data and display a username instead of the button
       const userResponse = await getUserFromAddress(await signer?.getAddress() as string)
+      console.log({ userResponse })
       if (userResponse.err) {
         toast.error(userResponse.err)
       } else {
@@ -59,14 +65,31 @@ const Navbar = ({ walletConnected, setWalletConnected }: Props) => {
     InitData()
   }, [signer, r])
 
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', theme === 'dark')
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light')
+  }
 
   return (
     <div className="mx-auto flex max-w-5xl items-center justify-between border-b border-gray-600 px-3 py-2">
-      <div className="cursor-pointer font-youth text-2xl font-semibold text-accent transition-colors hover:text-accent-hover md:text-2xl">
+      <Link className="cursor-pointer font-youth text-2xl font-semibold text-accent transition-colors hover:text-accent-hover md:text-2xl" to={"/"}>
         Deventra
-      </div>
+      </Link>
 
       <div className="flex items-center gap-4">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={toggleTheme}
+          className="rounded-full"
+        >
+          {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+        </Button>
+
         {walletConnected ?
           <UserProfile /> :
           <Button className="bg-accent text-white hover:bg-accent-hover" disabled={connecting} onClick={async () => {

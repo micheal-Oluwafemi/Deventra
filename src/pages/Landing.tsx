@@ -3,6 +3,7 @@ import Navbar from "@/sections/Navbar";
 import OtherEvents from "@/sections/OtherEvents";
 import LenisScroll from "@/LenisScroll";
 import { useState } from "react";
+import bg from "@/assets/hero/abstract_bg.jpg"
 
 export default function Landing() {
   const [connected, setConnected] = useState(false);
@@ -12,11 +13,12 @@ export default function Landing() {
       <div
         className="relative h-[90dvh]"
         style={{
-          background:
-            "linear-gradient(180deg, rgba(15,16,23,0.85) 0%, rgba(15,16,23,0.85) 100%), url('/src/assets/hero/bg4.webp')",
+          backgroundImage: `url('${bg}')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          backgroundColor: "#000000DD",
+          backgroundBlendMode: "multiply",
         }}
       >
         <Navbar walletConnected={connected} setWalletConnected={setConnected} />
@@ -30,6 +32,6 @@ export default function Landing() {
       </div>
 
       {connected && <OtherEvents />}
-    </main>
+    </main >
   );
 }
