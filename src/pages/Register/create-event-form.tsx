@@ -10,9 +10,9 @@ import { createHelia } from 'helia'
 import { strings } from '@helia/strings'
 import { parseEther } from "ethers"
 import { Event } from "@/types/event"
-import toBase64 from "@/lib/utils"
+import toBase64, { retrieveFromIPFS, uploadToIPFS } from "@/lib/utils"
 import { CID } from 'multiformats/cid'
-
+//""
 
 export default function CreateEventForm() {
   const [isPublic, setIsPublic] = useState(true)
@@ -46,19 +46,11 @@ export default function CreateEventForm() {
       description
     }
 
-    const helia = await createHelia()
-    const ipfs = strings(helia)
-    const imageBase64 = await toBase64(bannerImage[0]);
-    console.log(imageBase64)
-    const bannerImageCid = (await ipfs.add(imageBase64)).toString()
-    console.log(eventData)
-    console.log({ bannerImage: bannerImageCid })
-    const raw_cid = "bafkreicjmu22rad524iuzkqifzvluhnmcmqyciryrewchxl64xp2eckwbu";
-    console.log(raw_cid)
-    const cid = CID.parse(raw_cid)
-    const data = await ipfs.get(cid)
-    console.log(data)
+    const keys = await uploadToIPFS(bannerImage)
+    console.log({ keys })
 
+    const value = await retrieveFromIPFS(keys[0])
+    console.log({ value })
   }
 
   return (
