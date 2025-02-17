@@ -6,12 +6,10 @@ import { PriceConverter } from "./price-converter"
 import { Input } from "@/components/ui/input"
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
-import { createHelia } from 'helia'
-import { strings } from '@helia/strings'
 import { parseEther } from "ethers"
-import { Event } from "@/types/event"
-import toBase64, { retrieveFromIPFS, uploadToIPFS } from "@/lib/utils"
-import { CID } from 'multiformats/cid'
+import { uploadToIPFS } from "@/lib/utils"
+import { createEvent } from "@/lib/contract"
+import { Loading, Report } from "notiflix"
 //""
 
 export default function CreateEventForm() {
@@ -32,8 +30,8 @@ export default function CreateEventForm() {
   const [editingSeats, setEditingSeats] = useState(false)
 
   const handleSubmit = async () => {
-    const eventData = {
-      isPublic,
+    let eventData = {
+      public: isPublic,
       requireApproval,
       price: parseEther(entryFee.toString()),
       eventOrder,
@@ -43,14 +41,29 @@ export default function CreateEventForm() {
       endDate,
       endTime,
       location,
-      description
+      description,
+      banner: "",
+      images: [] as string[],
+      organizers: [],
+
     }
 
-    const keys = await uploadToIPFS(bannerImage)
-    console.log({ keys })
+    Loading.standard("Creating Event")
+    const banner_key = await uploadToIPFS(bannerImage)
+    const banner = `https://${banner_key[0]}.ipfs.w3s.link`
+    let images: string[] = []
+    if (eventImages.length > 0) {
+      const images_key = await uploadToIPFS(eventImages)
+      images = images_key.map(key => `https://${key}.ipfs.w3s.link`)
+    }
 
-    const value = await retrieveFromIPFS(keys[0])
-    console.log({ value })
+    eventData = { ...eventData, banner, images }
+    const response = await createEvent({ title: eventName, date: startDate, data: eventData })
+    console.log({ response })
+    if (response.err) {
+      Report.failure("Error", response.err, "Noted")
+    }
+    Loading.remove()
   }
 
   return (

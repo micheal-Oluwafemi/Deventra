@@ -360,4 +360,16 @@ export async function updateUser(id: bigint, name: string, email: string, phone:
   }
 }
 
+export async function createEvent({ title, data, date }: { title: string, data: Record<string, unknown>, date: string }) {
+  try {
+    if (!eventsContract) return { err: "Wallet has not been connected yet kindly connect and try again", data: null }
+    const transaction = await eventsContract.addEvent(title, JSON.stringify(data), date);
+    await transaction.wait();
+    return { err: null, data: transaction }
+  } catch (error) {
+    console.log(error)
+    return { err: "Unable to create event at this moment. please try again", data: null }
+  }
+}
+
 

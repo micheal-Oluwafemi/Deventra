@@ -25,15 +25,20 @@ export interface Event {
   participantsIds: string[] | null,
   data: {
     type: string | null; // Type of the event (e.g., 'music')
-    img_sm: string | null; // Small image path
-    img_lg: string | null; // Large image path
-    date: string | null; // Date of the event (e.g., '2025-01-15')
+    images: string[] | null; // Small image path
+    banner: string | null; // Large image path
+    startDate: string | null; // Date of the event (e.g., '2025-01-15')
+    endDate: string | null; // Date of the event (e.g., '2025-01-15')
+    startTime: string | null; // Date of the event (e.g., '2025-01-15')
+    endTime: string | null; // Date of the event (e.g., '2025-01-15')
     hour: string | null; // Time of the event (e.g., '20:00')
     location: string | null; // Location of the event
     description: string | null; // Description of the event
     seats: Seat[] | null; // Array of available seats
     organizers: Organizer[] | null; // Array of event organizers
     public: boolean; //Weather or not it shud be publically
+    requireApproval: boolean | null,
+    eventOrder: string[] | null,
   }
 }
 

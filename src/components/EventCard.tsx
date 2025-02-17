@@ -5,7 +5,7 @@ export function EventCard({ event }: { event: Event }) {
     <div className="overflow-hidden rounded-2xl bg-gray-800">
       <div className="relative h-48">
         <img
-          src={event.data.img_sm || "/placeholder.svg"}
+          src={event.data.banner || "/placeholder.svg"}
           alt={event.title}
           className="h-full w-full object-cover"
         />
@@ -15,9 +15,9 @@ export function EventCard({ event }: { event: Event }) {
       </div>
       <div className="p-4">
         <div className="mb-2 flex items-center gap-2 text-sm text-orange-500">
-          <span>{event.data.date}</span>
+          <span>{event.title}</span>
           <span>•</span>
-          <span>{event.data.hour}</span>
+          <span>{event.data.startDate}</span>
         </div>
         <h3 className="mb-3 line-clamp-1 text-lg font-semibold text-white">
           {event.title}
