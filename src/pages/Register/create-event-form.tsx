@@ -70,7 +70,7 @@ export default function CreateEventForm() {
     <div className="">
       <div className="mx-auto max-w-4xl px-4 pt-12">
         <div className="space-y-6">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between flex-col lg:flex-row">
             <div className="flex items-center space-x-2">
               <div className="h-6 w-6 rounded-full bg-yellow-500"></div>
               <span className="text-sm text-gray-700 dark:text-gray-200">Personal Calendar</span>
@@ -98,7 +98,7 @@ export default function CreateEventForm() {
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div className="space-y-2">
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-200">Start</label>
               <div className="flex space-x-2">
