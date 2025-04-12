@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import type { Event } from "../types/event";
 
 export function EventCard({ event }: { event: Event }) {
   return (
-    <div className="overflow-hidden rounded-2xl bg-gray-800">
+    <Link className="overflow-hidden rounded-2xl bg-gray-800" to={"/event/" + event.id} >
       <div className="relative h-48">
         <img
           src={event.data.banner || "/placeholder.svg"}
@@ -26,6 +27,6 @@ export function EventCard({ event }: { event: Event }) {
           📍 {event.data.location}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }

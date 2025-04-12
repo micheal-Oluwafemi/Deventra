@@ -11,7 +11,7 @@ import { getEvents } from "@/lib/contract";
 import { toast } from "sonner";
 
 const OtherEvents = () => {
-  const [activeCategory, setActiveCategory] = useState<Category>("Food");
+  const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [events, setEvents]: [Event[], Dispatch<Event[]>] = useState([] as Event[])
 
   const filteredEvents = events.filter(
