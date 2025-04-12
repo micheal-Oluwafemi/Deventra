@@ -14,6 +14,7 @@ import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import { ethers } from 'ethers'
 
 export default function EventViewPage() {
   const [eventData, setEventData] = useState<Event | null>(null)
@@ -59,6 +60,9 @@ export default function EventViewPage() {
 
     const formattedStartTime = formatTime(eventData.data.startTime)
     const formattedEndTime = formatTime(eventData.data.endTime)
+
+    // Convert price from Gwei to ETH using ethers
+    const priceInEth = eventData.data.price
 
     return (
       <div className="container mx-auto px-4 py-8 max-w-6xl">
@@ -198,7 +202,9 @@ export default function EventViewPage() {
                 <Separator />
 
                 <div>
-                  <Button className="w-full bg-[#e14817] hover:bg-[#c13d14] text-white" onClick={handleRegister}>Register for Event</Button>
+                  <Button className="w-full bg-[#e14817] hover:bg-[#c13d14] text-white" onClick={handleRegister}>
+                    {priceInEth === '0' ? "Register For Free" : `Register for ${priceInEth} ETH`}
+                  </Button>
                 </div>
               </CardContent>
             </Card>

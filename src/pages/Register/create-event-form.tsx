@@ -33,7 +33,7 @@ export default function CreateEventForm() {
     let eventData = {
       public: isPublic,
       requireApproval,
-      price: parseEther(entryFee.toString()),
+      price: entryFee,
       eventOrder,
       eventName,
       startDate,

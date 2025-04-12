@@ -82,13 +82,12 @@ export function PriceConverter({ ethAmount, onChange }: PriceConverterProps) {
         <h4 className="font-medium dark:text-white">Entry Fee</h4>
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
           <div className="flex items-center gap-2">
-            <CurrencyInput
+            <input
               value={ethAmount}
-              onValueChange={v => handleEthChange(Number(v))}
+              onChange={v => handleEthChange(Number(v.target.value))}
               placeholder="0.0"
-              decimalsLimit={6}
+              type="number"
               className="w-32 rounded-md border border-gray-200 bg-transparent px-3 py-1 text-sm dark:border-gray-700 dark:text-white"
-              allowDecimals
             />
             <span className="text-sm text-gray-500">ETH</span>
           </div>
